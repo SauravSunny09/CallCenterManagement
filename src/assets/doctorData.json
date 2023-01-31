@@ -1,0 +1,7 @@
+[
+    {"id": "1","name": "Ram", "date": "01.02.2023", "timeFrom": "08:00", "timeTo": "12:00","available":1}, 
+    {"id": "2","name": "Shyam", "date": "01.02.2023", "timeFrom": "14:00", "timeTo": "16:00","available":1}, 
+    {"id": "3","name": "Saurav", "date": "02.02.2023", "timeFrom": "09:00", "timeTo": "16:00","available":1}, 
+    {"id": "4","name": "Omkar", "date": "03.02.2023", "timeFrom": "07:30", "timeTo": "10:00","available":1},
+    {"id": "5","name": "Rajat", "date": "03.02.2023", "timeFrom": "13:00", "timeTo": "15:30","available":1}
+]

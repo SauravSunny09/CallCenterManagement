@@ -1,0 +1,30 @@
+<h1>Select your appointment!</h1>
+<section>
+  <h2>Available Appointments</h2>
+  <div class="first-section">
+    <ul class="check-list">
+      <li *ngFor="let appointment of appointments">Date: {{appointment.date}} - {{appointment.timeFrom}} - {{appointment.timeTo}}</li>
+    </ul>
+  </div>
+  <div class="second-section">
+    <form #form="ngForm">
+      <p>
+      <label>Select a date:
+      <select name="date" [(ngModel)]="selectedDate" (change)="selectDate($event)">
+        <option *ngFor="let date of appointmentDates" [ngValue]="date">{{date}}</option>
+      </select>
+      </label>
+      </p>
+      <p>
+      <label>Select a slot: 
+      <select name="slot" [(ngModel)]="selectedSlot">
+        <option *ngFor="let appointment of selectedTimeSlots">{{appointment.timeFrom}} - {{appointment.timeTo}}</option>
+      </select>
+      </label>
+      </p>
+      <p>
+        <button type="submit">Send appointment</button>
+      </p>
+    </form>
+  </div>
+</section>
